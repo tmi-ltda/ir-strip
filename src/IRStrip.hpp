@@ -26,5 +26,7 @@ class IRStrip {
       for (size_t i = 0; i < SIZE; i++) {
         error += _values[i];
       }
+
+      return error;
     }
 };
