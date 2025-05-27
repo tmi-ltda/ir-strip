@@ -15,9 +15,9 @@ class IRStrip {
       }
     }
 
-    void read() {
+    void read(IR_MODES mode) {
       for (size_t i = 0; i < SIZE; i++) {
-        _values[i] = _sensors[i].read();
+        _values[i] = _sensors[i].read(mode);
       }
     }
 
