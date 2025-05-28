@@ -32,7 +32,7 @@ class IRStrip {
 
     void setThreshold(uint16_t threshold) {
       for (size_t i = 0; i < SENSOR_N; i++) {
-        _sensor[i].setThreshold(threshold);
+        _sensors[i].setThreshold(threshold);
       }
     }
 };
