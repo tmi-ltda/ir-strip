@@ -2,7 +2,9 @@
 
 #include <IRSensor.hpp>
 
+#if !defined(SENSOR_N)
 #define SENSOR_N 8
+#endif
 class IRStrip {
   private:
     IRSensor _sensors[SENSOR_N];
